@@ -44,7 +44,7 @@
       }
 
       h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 300;
         text-align: center;
         opacity: .2;
@@ -207,6 +207,7 @@
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
       <input value="https://" placeholder="输入要转换的网址..." x-model="url" x-ref="url" />
+      <a style="color: red;">请务必加上http://或https://，不加则无法转换</a>
       <details>
         <summary>链接自定义</summary>
         <div>
