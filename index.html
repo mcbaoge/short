@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="asset/img/favicon.png"  >
@@ -43,7 +43,7 @@
         text-decoration: underline;
       }
 
-      h1 {
+      h2 {
         font-size: 5rem;
         font-weight: 300;
         text-align: center;
@@ -203,10 +203,10 @@
     </style>
   </head>
   <body>
-    <header><h1>URL转换小工具</h1></header>
+    <header><h2>URL转换小工具</h2></header>
     <main x-data="app" x-cloak>
       <p x-show.transition.opacity="alert" :class="alert?.type" x-text="alert?.message"></p>
-      <input placeholder="输入要转换的网址..." x-model="url" x-ref="url" />
+      <input value="https://" placeholder="输入要转换的网址..." x-model="url" x-ref="url" />
       <details>
         <summary>链接自定义</summary>
         <div>
